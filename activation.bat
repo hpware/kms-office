@@ -25,7 +25,7 @@ if '%errorlevel%' NEQ '0' (
 :gotAdmin
 
 @echo off
-echo 偵測 Microsoft Office 2021 安裝目錄
+echo Scanning for Microsoft Office 2021 installed location.
 set OfficePath="C:\Program Files\Microsoft Office\Office16\"
 if exist "C:\Program Files (x86)\Microsoft Office\Office16\ospp.vbs" set OfficePath="C:\Program Files (x86)\Microsoft Office\Office16\"
 For /F "tokens=2 delims=[]" %%G in ('ver') Do (set _version=%%G) 
